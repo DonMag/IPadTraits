@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<device id="retina4_7" orientation="portrait">
+<adaptation id="fullscreen"/>
+</device>
+<dependencies>
+<deployment identifier="iOS"/>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+<capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+<capability name="Safe area layout guides" minToolsVersion="9.0"/>
+<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+</dependencies>
+<objects>
+<placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TraitTestView" customModule="SW4Temp" customModuleProvider="target"/>
+<placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+<view contentMode="scaleToFill" id="iN0-l3-epB">
+<rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2I-Wo-fEl">
+<rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+<color key="backgroundColor" red="0.45490196078431372" green="0.52156862745098043" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2j-KG-F8a">
+<rect key="frame" x="375" y="0.0" width="0.0" height="0.0"/>
+<color key="backgroundColor" red="0.97254901960784312" green="0.40392156862745099" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstAttribute="height" id="AXD-eQ-1h9"/>
+<constraint firstAttribute="width" id="tez-lx-gm1"/>
+</constraints>
+<fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+<variation key="heightClass=compact">
+<mask key="constraints">
+<exclude reference="AXD-eQ-1h9"/>
+<exclude reference="tez-lx-gm1"/>
+</mask>
+</variation>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXo-w2-aKd">
+<rect key="frame" x="0.0" y="667" width="0.0" height="0.0"/>
+<color key="backgroundColor" red="0.17254901960784313" green="0.59607843137254901" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstAttribute="width" id="jIU-Ld-Txe"/>
+<constraint firstAttribute="height" id="wOE-gF-bPQ"/>
+</constraints>
+<fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+<variation key="heightClass=compact">
+<mask key="constraints">
+<exclude reference="jIU-Ld-Txe"/>
+<exclude reference="wOE-gF-bPQ"/>
+</mask>
+</variation>
+</label>
+</subviews>
+<color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstAttribute="bottom" secondItem="sXo-w2-aKd" secondAttribute="bottom" id="1T3-Jy-K0Z"/>
+<constraint firstItem="x2I-Wo-fEl" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="8cP-nw-Azc"/>
+<constraint firstItem="w2j-KG-F8a" firstAttribute="height" secondItem="x2I-Wo-fEl" secondAttribute="height" id="96S-1z-Dye"/>
+<constraint firstItem="sXo-w2-aKd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Bd2-O2-2Sf"/>
+<constraint firstAttribute="trailing" secondItem="x2I-Wo-fEl" secondAttribute="trailing" id="Btf-sR-nFF"/>
+<constraint firstItem="w2j-KG-F8a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Feh-7O-9tt"/>
+<constraint firstAttribute="trailing" secondItem="w2j-KG-F8a" secondAttribute="trailing" id="Gp9-jJ-YcU"/>
+<constraint firstItem="x2I-Wo-fEl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XM4-sb-5fz"/>
+<constraint firstAttribute="trailing" secondItem="sXo-w2-aKd" secondAttribute="trailing" constant="375" id="Ztc-MA-Jq0">
+<variation key="heightClass=compact" constant="0.0"/>
+</constraint>
+<constraint firstItem="w2j-KG-F8a" firstAttribute="width" secondItem="x2I-Wo-fEl" secondAttribute="width" id="cYb-Dp-5J7"/>
+<constraint firstItem="x2I-Wo-fEl" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="2:3" id="coI-el-yOt"/>
+<constraint firstItem="sXo-w2-aKd" firstAttribute="top" secondItem="x2I-Wo-fEl" secondAttribute="bottom" constant="167" id="dbt-2z-a3G">
+<variation key="heightClass=compact" constant="0.0"/>
+</constraint>
+<constraint firstItem="w2j-KG-F8a" firstAttribute="leading" secondItem="x2I-Wo-fEl" secondAttribute="trailing" constant="563.5" id="eia-Ec-aAO">
+<variation key="heightClass=compact" constant="0.0"/>
+</constraint>
+<constraint firstItem="x2I-Wo-fEl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="otL-1i-mP0"/>
+</constraints>
+<viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+<variation key="default">
+<mask key="constraints">
+<exclude reference="Ztc-MA-Jq0"/>
+<exclude reference="coI-el-yOt"/>
+<exclude reference="dbt-2z-a3G"/>
+<exclude reference="96S-1z-Dye"/>
+<exclude reference="cYb-Dp-5J7"/>
+<exclude reference="eia-Ec-aAO"/>
+</mask>
+</variation>
+<variation key="heightClass=compact">
+<mask key="constraints">
+<exclude reference="Btf-sR-nFF"/>
+<include reference="Ztc-MA-Jq0"/>
+<exclude reference="8cP-nw-Azc"/>
+<include reference="coI-el-yOt"/>
+<include reference="dbt-2z-a3G"/>
+<include reference="96S-1z-Dye"/>
+<include reference="cYb-Dp-5J7"/>
+<include reference="eia-Ec-aAO"/>
+</mask>
+</variation>
+</view>
+</objects>
+</document>
